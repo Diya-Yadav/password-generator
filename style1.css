@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.controls label {
+  display: block;
+  margin: 10px 0;
+}
+input[type="range"] {
+  width: 100%;
+}
+.output {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+#password {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+#copyBtn {
+  padding: 10px;
+}
+.copied {
+  color: green;
+  font-size: 14px;
+  display: none;
+  animation: fade 2s ease-out forwards;
+}
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+.strength-meter {
+  height: 10px;
+  width: 100%;
+  background: #ccc;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.strength-meter.fill {
+  background: green;
+  transition: width 0.3s;
+}
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dark-mode {
+  background: #1f1f1f;
+  color: #eee;
+}
+.dark-mode .container {
+  background: #2b2b2b;
+}
